@@ -24,9 +24,10 @@ If you'd like to get an invite for your calender, please send an e-mail to [open
 | 3. September 2025 | Run EO Application Packages in openEO | Juraj Zvolensky, EURAC | AJ |
 | 1. October 2025   | ML in openEO - Status quo             | Brian Pondi, WWU       | AJ |
 | 5. November 2025  | OGC APIs, CWL and openEO - Status quo | Juraj Zvolenský, EURAC | JZ |
-| 3. December 2025  | openEO processes & API - Status quo   | Matthias Mohr, moreGeo | MM |
+| 3. December 2025  | Open discussions                      | n/a                    | ?? |
 | 7. January 2026   | The new openEO QGIS plugin            | Caro Niebl, moreGeo    | MM |
 | 4. February 2026  | tbd                                   | tbd                    | tbd |
-| 4. March 2026     | tbd                                   | tbd                    | MM |
+| 4. March 2026     | openEO processes & API - Status quo   | Matthias Mohr, moreGeo | MM |
+
 
 If you are interested to give a talk or lead a discussion, please send an e-mail to [openeo.psc@uni-muenster.de](mailto:openeo.psc@uni-muenster.de).
