@@ -27,11 +27,15 @@ This will open a dialog window that allows you to enter URL and name of your new
 
 ![QGIS Connection Dialog](./images/connection_dialog.png)
 
-Now that you have chosen a backend, you can expand the openEO browser item and right-click on the connection entry to select "Log In (Authenticate)". This will allow you to use Basic authentication or [OpenID Connect](https://openid.net/connect/) authentication to login your connection:
+Now that you have chosen a backend, a login-dialog may open. you can also access this dialog by expanding the openEO browser item and right-clicking on the connection entry to select "Log In (Authenticate)". 
 
-![QGIS Login Dialog](./images/login_dialog.png)
+The login-dialog will allow you to use Basic authentication or [OpenID Connect](https://openid.net/connect/) authentication to login your connection:
 
-Using OpenID Connect login will open a window of your system's web browser, where you are asked to authenticate your connection.
+![QGIS Login Dialog example](./images/login_dialog.png)
+
+Using OpenID Connect login will open a window of your system's web browser, where you are asked to authenticate your connection. After authentication, you can return to your qgis window. On successful authentication, QGIS will display a success banner indicating a successful login: 
+
+![login successful](login_success.png)
 
 If logged in successfully, next to `"Collections"`, it is now possible to expand the `"Batch Job"` and `"Web Services"` entry that can be found upon expanding your connection browser item (provided the given backend supports each).
 
