@@ -19,6 +19,8 @@ First, download or clone the repository.
 Navigate inside the repository directory `cd openeo-qgis-plugin` and compress the plugin directory `openeo_plugin` as a `.zip` file
 Use the steps outlined in 2. to install the plugin as a zip file.
 
+This tutorial shows the capabilities of version 2.0-beta-2. Make sure you have installed at least that version.  
+
 After a successful installation and activation of the plugin, an openEO entry will be visible in the QGIS browser:
 
 ![QGIS Plugin Icon within the QGIS browser](./images/qgis_browser.png)
@@ -56,20 +58,36 @@ To remove all stored information on Your connections:
 
 ## Exploring a backend
 Upon connection to a backend, a list of all **Collections** provided by this backend is available. After authenticating this backend, lists for **Batch jobs** and **Web Services** that have been created by Your user account are available (as long as the backend supports the use of batch jobs or web services).
-A **Detail** view of Your connection can be accessed via Right-click > "Details". This will open a web-browser that displays information on Your chosen backend.
+A **Detail** view of Your connection can be accessed via *Right-click > "Details"*. This will open a web-browser that displays information on Your chosen backend.
+To view Your connection in the openEO Web Editor, You can use *Right-click > "Open in Web Editor"*. This will open a web-browser in which You can log in and configure and edit Web Services or Batch Jobs.
 
 ### Collections
-Expanding the Collections Sub-item will yield a list of all collections that are offered by Your openEO backend. 
-using Right-click > "Details" will open a web-browser window that displays further information on Your selected collection.
-Collections that have a tile-map-service available as a preview are displayed with a Raster-layer icon as opposed to the default cube icon. These Collections can be added as tile-map layers to Your project using either by Right-click > "Add Layer to Project" or by dragging the item from Your QGIS browser into Your QGIS map.
+Expanding the **Collections** Sub-item will yield a list of all collections that are offered by Your openEO backend. 
+using *Right-click > "Details"* will open a web-browser window that displays further information on Your selected collection.
+Collections that have a tile-map-service available as a preview are displayed with a Raster-layer icon as opposed to the default cube icon. These Collections can be added as tile-map layers to Your project by using either by *Right-click > "Add Layer to Project"* or by dragging the item from Your QGIS browser into Your QGIS map.
 
 ![Collections within the QGIS browser. Collections with an available preview have a checkerboard-icon whereas the default icon for a collection is cube shaped](./images/collections_list.png)
 
 ### Web Services
+Expanding the **Web Services** Sub-item will yield a list of all Web-Services that are accessible by the user-account that was used for authentication. 
+Using *Right-click > "Details"* on a Web-Service-item will open a web-browser window that displays further information on Your selected Service.
+Provided the Web-Service is enabled, You can add it to Your QGIS project by using either by *Right-click > "Add Layer to Project"* or by dragging the item from Your QGIS browser into Your QGIS map.
+Note that the display of Your Web-Service within Your QGIS project will depend on the configuration of said web-service. 
 
 ### Batch Jobs
+Expanding the **Batch Jobs** Sub-item will yield a list of all Web-Services that are accessible by the user-account that was used for authentication. 
+Using *Right-click > "Details"* on a Batch-Job-item will open a web-browser window that displays further information on Your selected Service.
+To view the logs of Your Batch Job, *Right-click > "View Logs"*. This will open a web-browser window that displays the logs of the batch job. **Note**: the logs displayed here represent a snapshot of the logs at the time of retrieval. To view updated logs, use *Right-click > "View Logs"* once more.
 
 #### Result Items
+The **Batch Job** items can be expanded and contain sub-Items that represent the Results of the batch jobs, if available.
+Result items can be either downloaded via right-click on the result item, or downloaded in batch by right-clicking on the containing job item, selection "Download Results To..", and selecting a directory in which to save the Results. By default, Results are saved to your systems download folder within your user directory.
+
+Certain Result items can be added to your QGIS project as layers. These carry either a raster-icon (see example screenshot: "Raster netcdf") or a vector-icon  (see example screenshot: "Vector GeoJSON polygons"), depending on the type of available layer. Result files that can not be added to your project carry a regular file-icon (see example screenshot: "Raster-ZARR").
+
+![Examples of different job result items](./images/result_items.png)
+
+You can add these to Your QGIS project by using either by *Right-click > "Add Layer to Project"* or by dragging the item from Your QGIS browser into Your QGIS map. Additionally you can bulk-add Your Job Results to Your project by selecting *Right-click > "Add Results to Project"* on the containing Batch-Job Item.
 
 ## Additional Information
 
