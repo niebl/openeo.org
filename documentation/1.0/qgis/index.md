@@ -5,9 +5,8 @@ The openEO QGIS plugin enables exploring openEO backends including batch jobs, c
 ## Installation
  
 For installation, the **latest stable version** is accessible in the plugin 
-manager of QGIS (Plugins -> Manage and Install Plugins). Note that you have to activate the option to show experimental 
-plugins (Settings -> Show also experimental plugins). After that, you can search for 
-"OpenEO", install and activate the plugin.
+manager of QGIS (`"Plugins"` -> `"Manage and Install Plugins"`). Note that you have to activate the option to show experimental 
+plugins (`"Settings"` -> `"Show also experimental plugins"`). After that, you can search for "OpenEO", install and activate the plugin.
 
 This tutorial shows the capabilities of version 2.0. Make sure you have installed at least that version.
 
@@ -17,17 +16,17 @@ After a successful installation and activation of the plugin, an openEO entry wi
 
 This is where all the functionality of the plugin in accessible.
 
-Instructions on additional installation methods can be found in the ![QGIS Plugin Repository Readme](https://github.com/Open-EO/openeo-qgis-plugin?tab=readme-ov-file#install)
+Instructions on additional installation methods can be found in the [QGIS Plugin Repository Readme](https://github.com/Open-EO/openeo-qgis-plugin?tab=readme-ov-file#install)
 
 ## Connection
 
-To connect to an openEO backend of your choice, right-click the openEO browser entry and select "New openEO Connection".
+To connect to an openEO backend of your choice, right-click the openEO browser entry and select `"New openEO Connection"`.
 
 This will open a dialog window that allows you to enter URL and name of your new openEO connection or select a connection from [openEO Hub](https://hub.openeo.org/):
 
 ![QGIS Connection Dialog](./images/connection_dialog.png)
 
-Now that you have chosen a backend, a login-dialog may open. you can also access this dialog by expanding the openEO browser item and right-clicking on the connection entry to select "Log In (Authenticate)". 
+Now that you have chosen a backend, a login-dialog may open. you can also access this dialog by expanding the openEO browser item and right-clicking on the connection entry to select `"Log In (Authenticate)"`. 
 
 The login-dialog will allow you to use Basic authentication or [OpenID Connect](https://openid.net/connect/) authentication to login your connection:
 
@@ -35,7 +34,7 @@ The login-dialog will allow you to use Basic authentication or [OpenID Connect](
 
 Using OpenID Connect login will open a window of your system's web browser, where you are asked to authenticate your connection. After authentication, you can return to your qgis window. On successful authentication, QGIS will display a success banner indicating a successful login: 
 
-![login successful](login_success.png)
+![login successful](./images/login_success.png)
 
 If logged in successfully, next to `"Collections"`, it is now possible to expand the `"Batch Job"` and `"Web Services"` entry that can be found upon expanding your connection browser item (provided the given backend supports each).
 
@@ -66,20 +65,20 @@ Collections that have a tile-map-service available as a preview are displayed wi
 ![Collections within the QGIS browser. Collections with an available preview have a checkerboard-icon whereas the default icon for a collection is cube shaped](./images/collections_list.png)
 
 ### Web Services
-Expanding the **Web Services** sub-item will yield a list of all Web-Services that are accessible by the user-account that was used for authentication. 
+Expanding the Web Services sub-item will yield a list of all Web-Services that are accessible by the user-account that was used for authentication. 
 Using `Right-click` -> `"Details"` on a Web-Service-item will open a web-browser window that displays further information on your selected Service.
 Provided the Web-Service is enabled, you can add it to your QGIS project by using either by `Right-click` -> `"Add Layer to Project"` or by dragging the item from your QGIS browser into your QGIS map.
 Note that the display of your Web-Service within your QGIS project will depend on the configuration of said web-service. 
 
 ### Batch Jobs
-Expanding the **Batch Jobs** sub-item will yield a list of all Web-Services that are accessible by the user-account that was used for authentication. 
+Expanding the Batch Jobs sub-item will yield a list of all Web-Services that are accessible by the user-account that was used for authentication. 
 Using `Right-click` -> `"Details"` on a Batch-Job-item will open a web-browser window that displays further information on your selected Service.
 To view the logs of your Batch Job, `Right-click` -> `"View Logs"`. This will open a web-browser window that displays the logs of the batch job. 
 
 **Note**: the logs displayed here represent a snapshot of the logs at the time of retrieval. To view updated logs, use `Right-click` -> `"View Logs"` once more.
 
 #### Result Items
-The **Batch Job** items can be expanded and contain sub-Items that represent the Results of the batch jobs, if available.
+The Batch Job items can be expanded and contain sub-Items that represent the Results of the batch jobs, if available.
 Result items can be either downloaded via `Right-click on the result item`, or downloaded in batch by `Right-click on the containing job` -> `"Download Results To.."` -> `Select download directory`. By default, Results are saved to your systems download folder within your user directory.
 
 Certain Result items can be added to your QGIS project as layers. These carry either a raster-icon (see example screenshot: `"Raster netcdf"`) or a vector-icon  (see example screenshot: `"Vector GeoJSON polygons"`), depending on the type of available layer. Result files that can not be added to your project carry a regular file-icon (see example screenshot: `"Raster-ZARR"`).
