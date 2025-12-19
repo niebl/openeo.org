@@ -9,6 +9,8 @@ manager of QGIS (`"Plugins"` -> `"Manage and Install Plugins"`). You can search 
 
 This tutorial shows the capabilities of version 2.0. Make sure you have installed at least that version.
 
+If you are installing on a MacOS system, ensure that qpip version 1.3.0 or later is installed.
+
 After a successful installation and activation of the plugin, an openEO entry will be visible in the QGIS browser:
 
 ![QGIS Plugin Icon within the QGIS browser](./images/qgis_browser.png)
