@@ -5,8 +5,7 @@ The openEO QGIS plugin enables exploring openEO backends including batch jobs, c
 ## Installation
  
 For installation, the **latest stable version** is accessible in the plugin 
-manager of QGIS (`"Plugins"` -> `"Manage and Install Plugins"`). Note that you have to activate the option to show experimental 
-plugins (`"Settings"` -> `"Show also experimental plugins"`). After that, you can search for "OpenEO", install and activate the plugin.
+manager of QGIS (`"Plugins"` -> `"Manage and Install Plugins"`). You can search for "OpenEO" in the plugin manager, then install and activate the plugin.
 
 This tutorial shows the capabilities of version 2.0. Make sure you have installed at least that version.
 
